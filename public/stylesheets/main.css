@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+/*--------Шапка сайта-------*/
+#header{
+    width: 100%;
+    background: #292838;
+    display: flex;
+}
+
+.logo{
+    padding: 5px;
+}
+
+.MainTitle{
+    padding: 5px;
+    font-family: GoodVibesPro;
+    color: #ffffff;
+    font-size: 70px;
+    margin-left: 25px;
+}
+/*-----------------------*/
+
+/*--------Панель навигации-------*/
+.nav{
+    background: rgba(187,137,198,0.4);
+    display: flex;
+    justify-content: space-around;
+    border-top: 5px ridge #6d420f;
+    border-bottom: 5px ridge #6d420f;
+}
+.navigationButton {
+    width: 240px;
+    background: none;
+    padding: 5px;
+    padding-bottom: 8px;
+    border: none;
+    cursor: pointer;
+    font-family: GoodVibesPro;
+    font-size: 40px;
+    outline: none;
+}
+.navigationButton:hover {
+    padding-bottom: 5px;
+    border-bottom: 3px solid #000;
+    background-image: -webkit-linear-gradient(top, rgba(187, 137, 198, 0), rgba(187, 137, 198, 0.5));
+}
+.navigationButton:active{
+    padding-bottom: 5px;
+    border-bottom: 3px solid #000;
+    background-image: -webkit-linear-gradient(top, rgba(187, 137, 198, 0.5), rgba(187, 137, 198, 0.9));
+}
+/*-----------------------*/
+
+/*-------Главная страница-------*/
+.slider{
+    width: 100%;
+    height:480px;
+    position:relative;
+}
+#band{
+    top:0;
+    width: 100%;
+    height: inherit;
+    display:flex;
+    left: 0;
+}
+#band img {
+    width: 100%;
+    height: inherit;
+}
+
+#band::after {
+    content: "";
+    display: flex;
+    clear: both;
+}
+
+.inscript{
+    position: absolute;
+    padding-bottom: 0.475%;
+    padding-top: 0.475%;
+    width: 90%;
+    left:10%;
+    bottom:0;
+    font-family: GoodVibesPro;
+    text-shadow: 1px 1px 1px #111;
+    font-size: 70px;
+    text-indent: 1em;
+    background: rgba(255,255,255,0.9);
+}
+/*-----------------------*/
+
+/*--------Информация о библиотеке--------*/
+.forms_back_style, #lib_information{
+    width: 100%;
+    height: 500px;
+    background-image: url("../images/aboutBack.jpg");
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inform_wrap{
+    width: 60%;
+    height:450px;
+    background: rgba(255,255,255,0.9);
+    padding:25px;
+    border-right:5px ridge #6d420f;
+    border-left: 5px ridge #6d420f;
+}
+.aboutTitle{
+    font-family: GoodVibesPro;
+    color: #800000;
+    font-size: 40px;
+}
+.informTitle{
+    font-family: Garamond;
+    font-size: 25px;
+}
+/*-----------------------*/
+
+/*--------Страница регистрации--------*/
+.forms_back{
+    background-image: url("../images/formBack.jpg");
+}
+
+.form_wrap{
+    width: 48%;
+    height:450px;
+    background: rgba(255,255,255,0.9);
+    padding:25px;
+    border-right:5px ridge #6d420f;
+    border-left: 5px ridge #6d420f;
+    overflow-y: scroll;
+}
+.formTitle{
+    font-family: GoodVibesPro;
+    color: #800000;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.title_additional{
+    margin-bottom:5px;
+    margin-top: 10px;
+}
+.rowinfo{
+    width:100%;
+    display:flex;
+    justify-content: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+.rowinfo_element{
+    margin-left: 30px;
+}
+input[type="date"], input[type="text"], input[type="password"], select, .offer_form input[type="text"]{
+    font-size: 17px;
+    margin-top: 5px;
+    outline: none;
+}
+
+#content input, #content select, .offer_form input{
+    padding: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    border: solid 1px #ccc;
+    border-radius: 3px;
+    font-family: Garamond;
+    margin-bottom: 10px;
+}
+input[type="submit"], input[type="reset"], .offer_form input[type="button"],.offer_form input[type="submit"]{
+    font-size: 20px;
+    outline: none;
+    background: silver;
+    background-image: -webkit-linear-gradient(top,rgba(255, 255, 255,0.9),rgba(255, 255, 255,0));
+    background-blend-mode: lighten;
+    cursor: pointer;
+    margin-top:13px;
+}
+input[type="submit"]:active, input[type="reset"]:active, .offer_form input[type="button"]:active{
+    background-image: -webkit-linear-gradient(top,rgba(255, 255, 255,0),rgba(255, 255, 255,0.9));
+}
+.infoblock{
+    border-bottom: 1px solid rgb(160,160,160);
+}
+.red{
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+}
+.additional_information{
+    font-family: Garamond;
+    font-size: 15px;
+    margin-left:40px;
+    padding:5px;
+    margin-bottom: 5px;
+}
+.password_warn{
+    font-family: Garamond;
+    font-size: 18px;
+    color: red;
+    display: none;
+}
+/*------------------------*/
+
+/*------Продление/Бронирование-------*/
+.book_option{
+    width: 420px;
+}
+/*В остальном используются те же стили, что и в разделах "Информация о библиотеке", "Страница регистрации"*/
+/*-----------------------*/
+
+/*-------Подвал-------*/
+#footer{
+    width:100%;
+    height: 100px;
+    background: #292838;
+    border-top: 5px ridge #6d420f;
+}
+/*-----------------------*/
+
+/*-------Добавление шрифта-------*/
+@font-face {
+    font-family: GoodVibesPro;
+    src: url("../fonts/GoodVibesPro.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+/*-----------------------*/
+
+/*-----------Предложение о подписке-----------*/
+#special_offer{
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top:50%;
+    left:50%;
+    z-index: 100;
+    display: none;
+}
+.offer_wrap{
+    padding:12px;
+    border: 2px solid #6d420f;
+    border-radius: 50px;
+    background-color: rgb(250,245,242);
+    height: 270px;
+    width: 510px;
+    font-size: 2em;
+}
+
+.offer_form{
+    border: 5px double #6d420f;
+    border-radius: 50px;
+    height: 260px;
+}
+
+.offer_form h3{
+    font-family: GoodVibesPro;
+    color: maroon;
+    text-align: center;
+}
+
+.offer_form p{
+    font-family: Garamond;
+    padding: 15px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.offer_input{
+    text-align: center;
+}
+
+.input_length{
+    width: 210px;
+}
+
+#special_offer_off{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+/*-----------------------*/
+
+/*-------Масштабирование при изменении размера экрана--------*/
+@media screen and (max-width: 1220px){
+    .navigationButton {
+        width: 180px;
+        font-size: 35px;
+    }
+    .slider{
+        height: 400px;
+    }
+    .inscript{
+        font-size: 55px;
+    }
+    #footer{
+        height: 180px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .logo{
+        height: 80px;
+        width: 80px;
+    }
+    .MainTitle{
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 920px){
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navigationButton {
+        width: 350px;
+        font-size: 40px;
+        border-left: 5px ridge #6d420f;;
+        border-right: 5px ridge #6d420f;;
+    }
+    .slider{
+        height: 350px;
+    }
+    .inscript{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .MainTitle{
+        font-size: 50px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .inform_wrap{
+        width: 500px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .form_wrap{
+        width: 380px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .slider{
+        height: 300px;
+    }
+    .inscript{
+        font-size: 35px;
+    }
+}
+
+
+@media screen and (max-height: 660px) {
+    #footer{
+        height: 100px;
+    }
+}
+/*-----------------------*/
+
+
+
+

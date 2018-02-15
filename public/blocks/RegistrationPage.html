@@ -1,0 +1,93 @@
+<form id="registration" class="forms_back forms_back_style">
+    <div class="form_wrap">
+        <h1 class="formTitle">Регистрация пользователя</h1>
+        <div class="infoblock">
+            <div class="informTitle title_additional rowinfo_element"> <b>Информация о пользователе:</b> </div>
+            <div class="rowinfo">
+                <div class="rowinfo_element">
+                    <div class="informTitle">Имя:<sup class="red">*</sup> </div>
+                    <input type="text" name="name" placeholder="Иван" id="name">
+                </div>
+                <div class="rowinfo_element">
+                    <div class="informTitle">Фамилия:<sup class="red">*</sup> </div>
+                    <input type="text" name="lastname" placeholder="Иванов" id="surname">
+                </div>
+                <div class="rowinfo_element">
+                    <div class="informTitle">Отчество:</div>
+                    <input type="text" name="patronymic" placeholder="Иванович" id="patronymic">
+                </div>
+            </div>
+            <div class="rowinfo">
+                <div class="rowinfo_element">
+                    <div class="informTitle">Дата рождения:<sup class="red">*</sup> </div>
+                    <input type="date" name="birthdate" id="birthdate">
+                </div>
+                <div class="rowinfo_element">
+                    <div class="informTitle">Пол:<sup class="red">*</sup> </div>
+                    <select name="sex">
+                        <option> Мужской </option>
+                        <option> Женский </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="infoblock">
+            <div class="informTitle title_additional rowinfo_element"><b>Паспортные данные:</b> </div>
+            <div class="rowinfo">
+                <div class="rowinfo_element">
+                    <div class="informTitle">Серия:<sup class="red">*</sup> </div>
+                    <input type="text" name="pseries" id="pseries">
+                </div>
+                <div class="rowinfo_element">
+                    <div class="informTitle">Номер:<sup class="red">*</sup> </div>
+                    <input type="text" name="pnumber" id="pnumber">
+                </div>
+            </div>
+        </div>
+        <div class="infoblock">
+            <div class="informTitle title_additional rowinfo_element"> <b>Контактная информация<!--Дополнительная информация-->:</b> </div>
+            <div class="rowinfo">
+                <div class="rowinfo_element">
+                    <div class="informTitle">E-mail:<sup class="red">*</sup></div>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div class="rowinfo_element">
+                    <div class="informTitle">Телефон: </div>
+                    <input type="text" name="phone" id="phone">
+                </div>
+            </div>
+        </div>
+        <div class="infoblock">
+            <div class="informTitle title_additional rowinfo_element"> <b>Логин и пароль:</b> </div>
+            <div class="rowinfo">
+                <div class="rowinfo_element">
+                    <div class="informTitle">Логин:<sup class="red">*</sup> </div>
+                    <input type="text" name="username" id="username">
+                </div>
+            </div>
+            <div class="rowinfo">
+                <div class="rowinfo_element">
+                    <div class="informTitle">Пароль:<sup class="red">*</sup> </div>
+                    <input type="password"  name="password" id="password1">
+                </div>
+                <div class="rowinfo_element">
+                    <div class="informTitle">Повторите пароль:<sup class="red">*</sup> </div>
+                    <input type="password" name="password" id="password2">
+                </div>
+                <div class="rowinfo_element password_warn" id="coincidence_warn">Пароли не совпадают!</div>
+            </div>
+            <div class="additional_information">
+                (Длина пароля должна составлять не менее чем 6 символов. Пароль может содержать только цифры и буквы латинского алфавита)
+            </div>
+        </div>
+        <div class="rowinfo_element">
+            <input  type="submit" value="Отправить" >
+            <input  type="reset" value="Сбросить" >
+        </div>
+        <div class="rowinfo_element password_warn" style="padding-top: 0px;" id="field_warn">Заполните обязательные поля!</div>
+        <div class="rowinfo_element password_warn" style="padding-top: 0px; color: green; display: block" id="message"></div>
+        <div class="additional_information">
+            (<span class="red">*</span>) отмечены поля обязательные к заполнению.
+        </div>
+    </div>
+</form>

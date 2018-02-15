@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <title>Библиотека им. Пушкина</title>
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="/stylesheets/bookGenre.css">
+    <link rel="stylesheet" href="/stylesheets/preload.css">
+    <link rel="stylesheet" href="/fonts/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="dist\jquery.maskedinput.js"></script>
+    <script src="javascripts\main.js"></script>
+</head>
+<body>
+    <div id = "main">
+        <div id="page_loader" class="preload">
+            <div class="loader"></div>
+            <div class="loader_inscription"> <p>Загрузка</p> </div>
+        </div>
+        <div id="special_offer">
+            <div class="offer_wrap">
+                <div class="offer_form">
+                    <h3>Узнавайте обо всём первым!</h3>
+                    <p> Подпишитесь на нашу рассылку и первым узнавайте о новых поступлениях книг</p>
+                    <div class="offer_input">
+                        <input type="text" name="your_name" placeholder="Ваше имя" class="input_length">
+                        <input type="text" name="your_email" placeholder="Ваш e-mail" class="input_length">
+                    </div>
+                    <div class="offer_input">
+                        <input type="submit" value="Подписаться">
+                        <input type="button" value="Не интересует" id="special_offer_off">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id = "header">
+            <img src = "/images/Pushkin.jpg" class = "logo">
+            <a href = "/" id="MainPage">
+               <div class = "MainTitle">
+                   Библиотека им. А. С. Пушкина
+               </div>
+            </a>
+        </div>
+        <div class = "nav">
+            <input class="navigationButton" data-loadresourse="/books" type="button" value="Книги">
+            <input class="navigationButton" data-loadresourse="/renewalBook" type="button" value="Продление">
+            <input class="navigationButton" data-loadresourse="/reserveBook" type="button" value="Бронирование">
+            <input class="navigationButton" data-loadresourse="/about" type="button" value="О нас">
+            <input class="navigationButton" data-loadresourse="/checkIn" type="button" value="Регистрация">
+        </div>
+        <div id ="content">
+        </div>
+        <div id = "footer">
+        </div>
+    </div>
+</body>
+</html>

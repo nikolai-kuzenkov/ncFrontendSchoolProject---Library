@@ -1,0 +1,62 @@
+/*--------Страница выбора жанров--------*/
+
+#genreselect{
+    width: 100%;
+    background-image: -webkit-linear-gradient(top,rgba(255,255,255,0.6),rgba(255,255,255,0.6)), url("../images/LibrBackground.jpg");
+    background-size: 100% 100%;
+    background-blend-mode: lighten;
+}
+
+#selectionTitle {
+    font-family: GoodVibesPro;
+    font-size: 40px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#genres {
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.gwrapper{
+    width: 400px;
+    height:300px;
+    border: 7px groove #6d420f;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    margin-top: 15px;
+    background: #FFF;
+}
+
+.genrelogo:hover{
+    opacity: 0.75;
+}
+
+.genreName{
+    width: 400px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-family: GoodVibesPro;
+    font-size: 40px;
+    padding-top: 15px;
+    color: #000;
+    font-weight: bold;
+    line-height: 1em;
+}
+
+.genreName p{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.genreName:hover{
+    color:rgba(65,3,115,1);
+}

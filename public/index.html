@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="/stylesheets/bookGenre.css">
     <link rel="stylesheet" href="/stylesheets/preload.css">
     <link rel="stylesheet" href="/fonts/style.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>-->
+    <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="dist\jquery.maskedinput.js"></script>
     <script src="javascripts\main.js"></script>
 </head>
@@ -44,12 +45,14 @@
         </div>
         <div class = "nav">
             <input class="navigationButton" data-loadresourse="/books" type="button" value="Книги">
-            <input class="navigationButton" data-loadresourse="/renewalBook" type="button" value="Продление">
-            <input class="navigationButton" data-loadresourse="/reserveBook" type="button" value="Бронирование">
+            <!--<input class="navigationButton" data-loadresourse="/renewalBook" type="button" value="Продление">
+            <input class="navigationButton" data-loadresourse="/reserveBook" type="button" value="Бронирование">-->
             <input class="navigationButton" data-loadresourse="/about" type="button" value="О нас">
-            <input class="navigationButton" data-loadresourse="/checkIn" type="button" value="Регистрация">
+            <input class="navigationButton" data-loadresourse="/checkIn" type="button" value="Вход/Регистрация">
+            <input class="navigationButton" data-loadresource="/myProfile" type="button" value="Личный кабинет">
         </div>
         <div id ="content">
+
         </div>
         <div id = "footer">
         </div>

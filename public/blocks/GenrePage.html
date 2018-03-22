@@ -1,77 +1,88 @@
 <div id="genreselect">
-    <div id="selectionTitle">
+    <!--<div id="selectionTitle">
         Пожалуйста, выберите интересующий вас жанр
+    </div>-->
+    <div class="selectwrap">
+        <div id="select_field">
+            <input type="text" placeholder="Введите название произведения или имя автора" id="book_selection_textfield">
+        </div>
+        <div id="criteria_select">
+            <p>Выбрать по:</p>
+            <input type="button" value="Жанрам">
+            <input type="button" value="Авторам">
+            <input type="button" value="Издательствам">
+        </div>
     </div>
     <div id="genres">
         <div class="gwrapper">
             <a href="/bookSelection" id="russian" class="genrelink">
-                <img src="/images/Onegin.jpg" class="genrelogo" alt="Русская художественная литература" title="Русская художественная литература">
+                <img src="/images/Onegin.jpg" class="genrelogo" alt="Русская художественная литература" title="Русская художественная литература" name="RusFict">
                 <div class = "genreName"> <p>Русская художественная литература</p> </div>
             </a>
         </div>
         <div class="gwrapper">
             <a href="/bookSelection" id="abroad" class="genrelink">
-                <img src="/images/Cervantes.jpg" class="genrelogo" alt="Зарубежная художественная литература" title="Зарубежная художественная литература">
+                <img src="/images/Cervantes.jpg" class="genrelogo" alt="Зарубежная художественная литература" title="Зарубежная художественная литература" name="ForFict">
                 <div class = "genreName"> <p>Зарубежная художественная литература</p> </div>
             </a>
         </div>
         <div class="gwrapper">
             <a href="/bookSelection" id="fairytales" class="genrelink">
-                <img src="/images/Ivan.jpg" class="genrelogo" alt="Детская литература" title="Детская литература">
+                <img src="/images/Ivan.jpg" class="genrelogo" alt="Детская литература" title="Детская литература" name="ChildLit">
                 <div class = "genreName"> <p>Детская литература</p> </div>
             </a>
         </div>
         <div class="gwrapper">
             <a href="/bookSelection" id="detective" class="genrelink">
-                <img src="/images/Holmes&Watson.jpg" class="genrelogo" alt="Детективы" title="Детективы">
+                <img src="/images/Holmes&Watson.jpg" class="genrelogo" alt="Детективы" title="Детективы" name="Detective">
                 <div class = "genreName"> <p>Детективы</p> </div>
             </a>
         </div>
         <div class="gwrapper">
             <a href="/bookSelection" id="fantasy" class="genrelink">
-                <img src="/images/Sauron.jpg" class="genrelogo" alt="Фэнтези" title="Фэнтези">
+                <img src="/images/Sauron.jpg" class="genrelogo" alt="Фэнтези" title="Фэнтези" name="Fantasy">
                 <div class = "genreName"> <p>Фэнтези</p> </div>
             </a>
         </div>
         <div class="gwrapper">
             <a href="/bookSelection" id="fantastic" class="genrelink">
-                <img src="/images/Future.jpg" class="genrelogo" alt="Фантастика" title="Фантастика">
+                <img src="/images/Future.jpg" class="genrelogo" alt="Фантастика" title="Фантастика" name="Fantastic">
                 <div class = "genreName"> <p>Фантастика</p> </div>
             </a>
         </div>
         <div class = "gwrapper">
             <a href = "/bookSelection" id = "historical" class="genrelink">
-                <img src = "/images/History.jpg" class = "genrelogo" alt="Историческая литература" title="Историческая литература">
+                <img src = "/images/History.jpg" class = "genrelogo" alt="Историческая литература" title="Историческая литература" name="HistLit">
                 <div class = "genreName"> <p>Историческая литература</p> </div>
             </a>
         </div>
         <div class="gwrapper">
             <a href="/bookSelection" id="philosophy" class="genrelink">
-                <img src="/images/Sokrat.jpg" class="genrelogo" alt="Философия" title="Философия">
+                <img src="/images/Sokrat.jpg" class="genrelogo" alt="Философия" title="Философия" name="Phylosophy">
                 <div class = "genreName"> <p>Философия</p> </div>
             </a>
         </div>
         <div class="gwrapper">
             <a href="/bookSelection" id="religion" class="genrelink">
-                <img src="/images/Golub.jpg" class="genrelogo" alt="Религия" title="Религия">
+                <img src="/images/Golub.jpg" class="genrelogo" alt="Религия" title="Религия" name="Religion">
                 <div class = "genreName"> <p>Религия</p> </div>
             </a>
         </div>
         <div class="gwrapper">
             <a href="/bookSelection" id="science" class="genrelink">
-                <img src="/images/Fossil.jpg" class="genrelogo" alt="Научно-познавательная литература" title="Научно-познавательная литература">
+                <img src="/images/Fossil.jpg" class="genrelogo" alt="Научно-познавательная литература" title="Научно-познавательная литература" name="ScienLit">
                 <div class = "genreName"> <p>Научно-познавательная литература</p> </div>
             </a>
         </div>
         <div class="gwrapper">
             <a href="/bookSelection" id="tech" class="genrelink">
-                <img src="/images/Cars.jpg" class="genrelogo" alt="Техника" title="Техника">
+                <img src="/images/Cars.jpg" class="genrelogo" alt="Техника" title="Техника" name="Tech">
                 <div class = "genreName"> <p>Техника</p> </div>
             </a>
         </div>
         <div class="gwrapper">
             <a href="/bookSelection" id="public" class="genrelink">
-                <img src="/images/Lenin.jpg" class="genrelogo" alt="Публицистика" title="Публицистика">
+                <img src="/images/Lenin.jpg" class="genrelogo" alt="Публицистика" title="Публицистика" name="Journalism">
                 <div class = "genreName"> <p>Публицистика</p> </div>
             </a>
         </div>
